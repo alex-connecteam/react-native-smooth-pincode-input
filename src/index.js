@@ -198,6 +198,7 @@ class SmoothPinCodeInput extends Component {
                   animation={idx === value.length && focused && animated ? animationFocused : null}
                   iterationCount="infinite"
                   duration={500}
+                  testID={'rn-smooth-pincode-input-' + idx}
                 >
                   {isCellText && !maskComponent && <Text style={[textStyle, cellFocused ? textStyleFocused : {}]}>
                     {cellText}
